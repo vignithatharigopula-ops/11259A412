@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[20] = "Hello";
+    int i, len;
+    char rev[20];
+
+    len = strlen(str);
+
+    for(i = 0; i < len; i++) {
+        rev[i] = str[len - i - 1];
+    }
+    rev[len] = '\0';
+
+    printf("Reversed String: %s\n", rev);
+
+    return 0;
+}
+
+OUTPUT:
+Reversed String: olleH

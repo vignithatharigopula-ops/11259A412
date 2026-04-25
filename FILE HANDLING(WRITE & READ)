@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    FILE *fp;
+    char ch;
+
+    // Writing to file
+    fp = fopen("test.txt", "w");
+    fprintf(fp, "Hello File Handling");
+    fclose(fp);
+
+    // Reading from file
+    fp = fopen("test.txt", "r");
+
+    while((ch = fgetc(fp)) != EOF) {
+        printf("%c", ch);
+    }
+
+    fclose(fp);
+
+    return 0;
+}
+
+OUTPUT:
+Hello File Handling

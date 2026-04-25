@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int arr[5] = {10, 20, 30, 40, 50};
+    int *ptr;
+    int i;
+
+    ptr = arr; // base address
+
+    for(i = 0; i < 5; i++) {
+        printf("Value = %d, Address = %u\n", *(ptr + i), (ptr + i));
+    }
+
+    return 0;
+}
+
+OUTPUT:
+Value = 10, Address = 1000
+Value = 20, Address = 1004
+Value = 30, Address = 1008
+Value = 40, Address = 1012
+Value = 50, Address = 1016

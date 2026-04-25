@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int x = 5;
+
+    printf("Square of %d = %.2f\n", x, pow(x, 2));
+
+    return 0;
+}
+
+OUTPUT:Square of 5 = 25.00
